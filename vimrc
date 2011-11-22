@@ -1,11 +1,13 @@
+" =============================================================================
+" __   _(_)_ __ ___  _ __ ___ 
+" \ \ / / | '_ ` _ \| '__/ __|
+"  \ V /| | | | | | | | | (__ 
+" (_)_/ |_|_| |_| |_|_|  \___|
+" 
+" =============================================================================
 "
-"   _   _(_)_ __ ___  _ __ ___
-"  / \ / / | '_ ` _ \| '__/ __|
-"   \ V /| | | | | | | | | (__
-"    \_/ |_|_| |_| |_|_|  \___|
-"
-"
-" Paul ADENOT -- 2011
+" Clément Geiger - 2011
+" forked from Paul ADENOT -- 2011
 "
 call pathogen#infect()
 
@@ -22,9 +24,9 @@ syntax on
 " Color scheme.
 set background=dark
 if has("gui_running")
-  colorscheme solarized
+  colorscheme desert
 else
-  color aureal
+  color desert
 endif
 " Highlight matched pattern when searching or replacing.
 set hlsearch
@@ -71,7 +73,7 @@ set guioptions-=b
 " Copy visual area to paste buffer
 set go+=a
 " Allow backspace in insert mode like in any other text editor
-set backspace=indent,eol,start 
+set backspace=indent,eol,start
 " Set the dictionnary to french
 set dictionary+="/usr/share/dict/french"
 " Set the Doxygen style comments, to ease the writing of documentation
@@ -90,9 +92,6 @@ set sidescrolloff=5
 set sidescroll=1
 set viminfo='10,:20,\"100,%,n~/.viminfo
 set history=1000
-set nobackup
-set nowritebackup
-set noswapfile
 " Persistent undo
 set undofile
 set undodir=~/.vim/undodir
@@ -237,17 +236,9 @@ let delimitMate_matchpairs = "(:),[:],{:}"
 au FileType html let b:delimitMate_matchpairs = "(:),[:],{:},<:>"
 
 " Press F4 to clear highlighting.
-map <F4> :noh<CR>
+map <F2> :noh<CR>
 " Allow to paste formatted code nicely
 set pastetoggle=<F3>
-
-" Control-R U inserts an uuid
-imap <C-r>u <C-R>=system('~/bin/uuidgen.py')<cr>
-
-" Highlight YAML preambles in Jekyll posts
-autocmd BufNewFile,BufRead */_posts/*.textile,*/_posts/*.mdwn syntax match Comment /\%^---\_.\{-}---$/
-" Highlight code blocks in Jekyll posts
-autocmd BufNewFile,BufRead */_posts/*.textile,*/_posts/*.mdwn syntax region Comment start=/^{% highlight .* %}$/ end=/{% endhighlight %}/
 
 " Activate syntastic. Prevent its activation for c++ because it screws up in
 " Mozilla codebase. TODO: Make this work.
