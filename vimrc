@@ -82,6 +82,8 @@ set comments=s1:/**,mb:*,ex:*/
 set wildignore+=*.o,*.obj,.git,*.swp,*.svn,*.pyc
 " Add · for trailing spaces.
 set list listchars=tab:\ \ ,trail:·
+" nice menu for auto completion
+set wildmenu
 set lazyredraw
 " Don't go to the start of line when using C-D and such
 set nostartofline
