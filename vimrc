@@ -81,9 +81,9 @@ set comments=s1:/**,mb:*,ex:*/
 " We will almost never open .o in vim, so remove them from matching
 set wildignore+=*.o,*.obj,.git,*.swp,*.svn,*.pyc
 " Add · for trailing spaces.
-set list listchars=tab:\ \ ,trail:·
+set list listchars=trail:·
 " nice menu for auto completion
-set wildmenu
+"set wildmenu
 set lazyredraw
 " Don't go to the start of line when using C-D and such
 set nostartofline
@@ -184,13 +184,12 @@ nnoremap <F5> :GundoToggle<CR>
 
 " Tag list toggle
 noremap <F6> :TagbarToggle<CR>
-
+  
 " Control tab switches between cpp an .h file, as in Eclipse
 map <C-Tab> :FSHere<CR><Esc>
 
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
-set nolist
 
 map <C-S-]> gt
 map <C-S-[> gT
@@ -204,9 +203,6 @@ map <M-7> 7gt
 map <M-8> 8gt
 map <M-9> 9gt
 map <M-0> :tablast<CR>
-
-" Use the same symbols as TextMate for tabstops and EOLs
-set listchars=tab:▸\ ,eol:¬
 
 augroup mycppfiles
   au!
