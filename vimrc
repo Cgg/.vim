@@ -97,6 +97,8 @@ set history=1000
 " Persistent undo
 set undofile
 set undodir=~/.vim/undodir
+" show partially typed commands
+set showcmd
 
 " Use TAB in normal mode to fold/unfold
 set foldmethod=indent
