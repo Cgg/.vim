@@ -81,7 +81,7 @@ set comments=s1:/**,mb:*,ex:*/
 " We will almost never open .o in vim, so remove them from matching
 set wildignore+=*.o,*.obj,.git,*.swp,*.svn,*.pyc
 " Add · for trailing spaces.
-set list listchars=trail:·
+set list listchars=tab:\ \ ,trail:·
 " nice menu for auto completion
 set wildmenu
 set lazyredraw
