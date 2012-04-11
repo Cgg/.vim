@@ -135,7 +135,7 @@ augroup filetypedetect
   " highlight .sjs (server side js) as javacript
   au BufRead,BufNewFile {*.sjs} set ft=javascript
   " Respect PEP8 while editing python
-  au FileType python  set tabstop=4 textwidth=79
+  au FileType python  set tabstop=4 textwidth=0
   " When using make, we shouldn't expand tabs.
   au FileType make set noexpandtab
 augroup END
