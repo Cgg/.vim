@@ -22,12 +22,11 @@ let c_comment_strings=1
 " Enable syntax highlighting
 syntax on
 " Color scheme.
-set background=dark
-if has("gui_running")
-  colorscheme desert
-else
-  color desert
-endif
+" Select colormap: 'soft', 'softlight', 'standard' or 'allblue'
+let xterm16_colormap	= 'allblue'
+" Select brightness: 'low', 'med', 'high', 'default' or custom levels.
+let xterm16_brightness	= 'default'
+colo xterm16
 " Highlight matched pattern when searching or replacing.
 set hlsearch
 " Show the line numbers.
@@ -57,6 +56,8 @@ set matchpairs+=<:>":"`:`
 set expandtab
 set tabstop=2
 set shiftwidth=2
+" hitting backspace delete spaces two by two
+set softtabstop=2
 " Case sensitive seach if a capital is used in the search pattern
 set ignorecase
 set smartcase
