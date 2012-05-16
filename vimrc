@@ -119,6 +119,8 @@ filetype indent on
 filetype plugin on
 " Enable spelling check on .tex and .latex files, as well as rst files
 augroup filetypedetect
+  " set syntax for qml files
+  au BufNewFile,BufRead *.qml set syntax=qml
   au BufNewFile,BufRead {*.tex,*.md,*.mdwn,*.markdown} setlocal spell spelllang=en nocindent
   au BufWritePost *.tex :silent !make
   au BufNewFile,BufRead *.rst set syntax=rest
