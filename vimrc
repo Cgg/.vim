@@ -23,9 +23,9 @@ let c_comment_strings=1
 syntax on
 " Color scheme.
 " Select colormap: 'soft', 'softlight', 'standard' or 'allblue'
-let xterm16_colormap	= 'allblue'
+let xterm16_colormap	= 'standard'
 " Select brightness: 'low', 'med', 'high', 'default' or custom levels.
-let xterm16_brightness	= 'default'
+let xterm16_brightness	= 'high'
 colo xterm16
 " Highlight matched pattern when searching or replacing.
 set hlsearch
@@ -119,6 +119,8 @@ filetype indent on
 filetype plugin on
 " Enable spelling check on .tex and .latex files, as well as rst files
 augroup filetypedetect
+  " set syntax for qml files
+  au BufNewFile,BufRead *.qml set syntax=qml
   au BufNewFile,BufRead {*.tex,*.md,*.mdwn,*.markdown} setlocal spell spelllang=en nocindent
   au BufWritePost *.tex :silent !make
   au BufNewFile,BufRead *.rst set syntax=rest
