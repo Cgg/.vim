@@ -15,6 +15,8 @@ call pathogen#infect()
 set mouse=a
 set nocp
 set ttyfast
+" who cares about vi
+set nocompatible
 " , is a nice leader key
 let mapleader = ","
 " highlight words and numbers inside a comment
