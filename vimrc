@@ -22,12 +22,7 @@ let c_comment_strings=1
 " Enable syntax highlighting
 syntax on
 " Color scheme.
-" Select colormap: 'soft', 'softlight', 'standard' or 'allblue'
-let xterm16_colormap	= 'standard'
-" Select brightness: 'low', 'med', 'high', 'default' or custom levels.
-let xterm16_brightness	= 'high'
-colo xterm16
-" Highlight matched pattern when searching or replacing.
+colo solarized
 set hlsearch
 " Show the line numbers.
 set number
