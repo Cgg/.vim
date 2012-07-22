@@ -23,6 +23,7 @@ let c_comment_strings=1
 syntax on
 " Color scheme.
 colo solarized
+set background=dark
 set hlsearch
 " Show the line numbers.
 set number
