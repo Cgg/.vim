@@ -144,7 +144,7 @@ augroup END
 """" Omnicpp
 set tags+=./tags;$HOME
 set tags+=~/.vim/tags/cpp
-set tags+=~/.vim/tags/sqlite3
+set tags+=~/.vim/qttags
 set tags+=~/.vimtags
 " ctrl+F12 builds tags for the current project.
 map <C-F12> :!ctags -R --sort=yes --c++-kinds=+lp --fields=+iaS --extra=+q .<CR>
