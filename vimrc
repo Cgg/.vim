@@ -13,10 +13,9 @@ call pathogen#infect()
 
 """ Standard ViM options
 set mouse=a
-set nocp
 set ttyfast
 " who cares about vi
-set nocompatible
+set nocompatible "eq. to nocp
 " , is a nice leader key
 let mapleader = ","
 " highlight words and numbers inside a comment
