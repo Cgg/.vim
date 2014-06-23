@@ -146,8 +146,8 @@ set tags+=./tags;$HOME
 set tags+=~/.vim/tags/cpp
 set tags+=~/.vim/qttags
 set tags+=~/.vimtags
-" ctrl+F12 builds tags for the current project.
-map <C-F12> :!ctags -R --sort=yes --c++-kinds=+lp --fields=+iaS --extra=+q .<CR>
+" F12 builds tags for the current project.
+map <F12> :!ctags -R --sort=yes --c++-kinds=+lp --fields=+iaS --extra=+q .<CR>
 
 au BufNewFile,BufRead,BufEnter *.cpp,*.hpp set omnifunc=omni#cpp#complete#Main
 
