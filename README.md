@@ -1,4 +1,4 @@
-# Paul's .vim directory
+# Cgg's .vim directory (forked from Paul's)
 
 ## tl;dr 
 Paste this into a terminal, if you are using Debian or Ubuntu :
@@ -45,7 +45,7 @@ sh update.sh
 
 > Leader key
 
-F4
+F2
 
 > Remove search highlighting
 
@@ -57,7 +57,7 @@ F6
 
 > Tagbar panel toggle
 
-ctrl+F12
+F12
 
 > Generate ctags file for current directory (recursive).
 
