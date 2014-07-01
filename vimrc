@@ -35,8 +35,9 @@ set smartindent
 set autowrite
 " Automatic comments
 set formatoptions=tco
-" Show a line at 80 chars
+" Show a line at 80 chars and disable text width checking
 set colorcolumn=80
+set textwidth=0
 " Incremental search : search befor return is typed
 set incsearch
 " Set the EOL format
