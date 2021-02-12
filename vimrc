@@ -23,7 +23,7 @@ let c_comment_strings=1
 " Enable syntax highlighting
 syntax on
 " Color scheme.
-colo solarized
+colo desert
 set background=dark
 set hlsearch
 " Show the line numbers.
@@ -102,7 +102,7 @@ set showcmd
 " Use TAB in normal mode to fold/unfold
 set foldmethod=indent
 map <Tab> za
-au BufReadPost * normal zR
+au BufWinEnter * normal zR
 
 " SCons support
 set makeprg=scons\ -u\ \.
@@ -319,3 +319,5 @@ endfunction
   nnoremap <F9> :call HexUpdate("+",1)<CR>
 endif
 
+" vim-javascript options
+let g:javascript_plugin_jsdoc = 1
